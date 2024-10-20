@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package proto.user_service.user.v1;
+package user_service.v1;
 
 message User {
   string id = 1;
