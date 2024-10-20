@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-package todo_service.v1.todo;
+package proto.todo_service.todo.v1;
 
 message Todo {
   string id = 1;
   string todo = 2;
-  string createdAt = 3;
+  string created_at = 3;
 }
 
 message CreateTodoRequest {

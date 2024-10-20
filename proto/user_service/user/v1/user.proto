@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package proto.user_service.user.v1;
+
+message User {
+  string id = 1;
+  string username = 2;
+  string email = 3;
+}
+
+message GetUsersResponse {
+  int32 count = 1;
+  repeated User users = 2;
+}
+
+message GetUsersRequest {
+  optional string sort = 1;
+  optional string id = 2;
+}
+
+service UserService {
+  rpc GetUsers(GetUsersRequest) returns (GetUsersResponse);
+}
