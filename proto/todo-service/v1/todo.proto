@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package todo;
+package todo_service.v1.todo;
 
 message Todo {
   string id = 1;
